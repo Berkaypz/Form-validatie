@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validatie</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header>Registratie</header>
+        <form action="http://eelslap.com/">
+
+            <div class="field email-field">
+            <div class="input-field">
+            <input type="email" placeholder="Voer hier uw email:" class="email"/>
+        </div>
+        <span class="error email-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">Voer een geldige email in!</p>
+        </span>
+        </div>
+        <div class="field create-password">
+            <div class="input-field">
+            <input type="password" placeholder="Maak een wachtwoord aan:" class="password"/>
+            <i class="bx bx-hide show-hide"></i>
+        </div>
+        <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+                Voer een wachtwoord in met max 8 karakters, één nummer, één hoofdletter en één symbool! </p>
+            
+        </span>
+        </div>
+        <div class="field confirm-password">
+            <div class="input-field">
+            <input type="password" placeholder="Bevestig uw wachtwoord:" class="cPassword"/>
+            <i class="bx bx-hide show-hide"></i>
+        </div>
+        <span class="error password-error">
+            <i class="bx bx-error-circle error-icon"></i>
+            <p class="error-text">
+                Wachtwoord komt niet overeen!</p>
+        </span>
+        </div>
+
+         <div class="input-field button">
+            <input type="submit" value="Registreer">
+         </div>
+
+        </form>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
